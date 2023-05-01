@@ -1,65 +1,90 @@
 :root {
-    --aliasSurfacePrimary1: #dfe9fd;
-    --aliasSurfacePrimary2: #b9cff8;
-    --aliasSurfacePrimaryOnPrimary: #23007d;
-    --aliasSurfacePrimaryOnPrimaryMuted: #1832e3;
-    --aliasSurfaceNeutral1: #e9e9e9;
-    --aliasSurfaceNeutral2: #cecece;
-    --aliasSurfaceNeutralOnNeutral: #252525;
-    --aliasFontSizeBodySm: 13px;
-    --aliasFontSizeBodyMd: 16px;
-    --aliasFontSizeBodyLg: 20px;
-    --aliasFontSizeHeadingSm: 20px;
-    --aliasFontSizeHeadingMd: 25px;
-    --aliasFontSizeHeadingLg: 31px;
-    --aliasFontSizeHeadingXl: 39px;
-    --aliasFontSizeHeadingDisplay: 49px;
-    --aliasFontWeightBody: 400;
-    --aliasFontWeightHeading: 700;
-    --aliasFontWeightLede: 500;
-    --aliasLineHeightBody: 1.6;
-    --aliasLineHeightHeading: 1.1;
-    --aliasLineHeightLede: 1.3;
-    --aliasTypographyTitleH5FontFamily: PP Object Sans;
-    --aliasTypographyTitleH5FontWeight: 700;
-    --aliasTypographyTitleH5LineHeight: 1.1;
-    --aliasTypographyTitleH5FontSize: 20px;
-    --aliasTypographyTitleH4FontFamily: PP Object Sans;
-    --aliasTypographyTitleH4FontWeight: 700;
-    --aliasTypographyTitleH4LineHeight: 1.1;
-    --aliasTypographyTitleH4FontSize: 25px;
-    --aliasTypographyTitleH3FontFamily: PP Object Sans;
-    --aliasTypographyTitleH3FontWeight: 500;
-    --aliasTypographyTitleH3LineHeight: 1.3;
-    --aliasTypographyTitleH3FontSize: 31px;
-    --aliasTypographyTitleH2FontFamily: PP Object Sans;
-    --aliasTypographyTitleH2FontWeight: 700;
-    --aliasTypographyTitleH2LineHeight: 1.1;
-    --aliasTypographyTitleH2FontSize: 39px;
-    --aliasTypographyTitleDisplayFontFamily: PP Object Sans;
-    --aliasTypographyTitleDisplayFontWeight: 700;
-    --aliasTypographyTitleDisplayLineHeight: 1.1;
-    --aliasTypographyTitleDisplayFontSize: 49px;
-    --aliasTypographyBodyNormalLegalFontFamily: Inter;
-    --aliasTypographyBodyNormalLegalFontWeight: 400;
-    --aliasTypographyBodyNormalLegalLineHeight: 1.6;
-    --aliasTypographyBodyNormalLegalFontSize: 13px;
-    --aliasTypographyBodyNormalNormalFontFamily: Inter;
-    --aliasTypographyBodyNormalNormalFontWeight: 400;
-    --aliasTypographyBodyNormalNormalLineHeight: 1.6;
-    --aliasTypographyBodyNormalNormalFontSize: 16px;
-    --aliasTypographyBodyNormalLedeFontFamily: Inter;
-    --aliasTypographyBodyNormalLedeFontWeight: 500;
-    --aliasTypographyBodyNormalLedeLineHeight: 1.3;
-    --aliasTypographyBodyNormalLedeFontSize: 20px;
-    --aliasTypographyBodyStrongLegalFontFamily: Inter;
-    --aliasTypographyBodyStrongLegalFontWeight: 700;
-    --aliasTypographyBodyStrongLegalLineHeight: 1.6;
-    --aliasTypographyBodyStrongLegalFontSize: 13px;
-    --aliasTypographyBodyStrongNormalFontFamily: Inter;
-    --aliasTypographyBodyStrongNormalFontWeight: 700;
-    --aliasTypographyBodyStrongNormalLineHeight: 1.6;
-    --aliasTypographyBodyStrongNormalFontSize: 16px;
-    --aliasTextDefault: #3a3a3a;
-    --aliasTextMuted: #686868;
+    /* farver */
+    --Primary1: #dfe9fd;
+    --Primary2: #b9cff8;
+    --PrimaryOnPrimary: #23007d;
+    --PrimaryOnPrimaryMuted: #1832e3;
+    --Neutral1: #e9e9e9;
+    --Neutral2: #cecece;
+    --NeutralOnNeutral: #252525;
+
+    /* fontsize */
+    --text-Sm: 13px;
+    --text-Md: 16px;
+    --text-Lg: 20px;
+    --HeadingSm: 20px;
+    --HeadingMd: 25px;
+    --HeadingLg: 31px;
+    --HeadingXl: 39px;
+    --HeadingDisplay: 49px;
+
+    /* fontweight */
+    --FontWeightBody: 400;
+    --FontWeightHeading: 700;
+    --FontWeightLede: 500;
+
+    /* lineheight */
+    --LineHeightBody: 1.6;
+    --LineHeightHeading: 1.1;
+    --LineHeightLede: 1.3;
+
+    /* h5 */
+    --AliasTitleH5FontFamily: PP Object Sans;
+    --AliasTitleH5FontWeight: 700;
+    --AliasTitleH5LineHeight: 1.1;
+    --AliasTitleH5FontSize: 20px;
+
+    /* h4 */
+    --AliasTitleH4FontFamily: PP Object Sans;
+    --AliasTitleH4FontWeight: 700;
+    --AliasTitleH4LineHeight: 1.1;
+    --AliasTitleH4FontSize: 25px;
+
+    /* h3 */
+    --AliasTitleH3FontFamily: PP Object Sans;
+    --AliasTitleH3FontWeight: 500;
+    --AliasTitleH3LineHeight: 1.3;
+    --AliasTitleH3FontSize: 31px;
+
+    /* h2 */
+    --AliasTitleH2FontFamily: PP Object Sans;
+    --AliasTitleH2FontWeight: 700;
+    --AliasTitleH2LineHeight: 1.1;
+    --AliasTitleH2FontSize: 39px;
+
+    /* Display */
+    --AliasTitleDisplayFontFamily: PP Object Sans;
+    --AliasTitleDisplayFontWeight: 700;
+    --AliasTitleDisplayLineHeight: 1.1;
+    --AliasTitleDisplayFontSize: 49px;
+
+
+    --AliasNormalLegalFontFamily: Inter;
+    --AliasNormalLegalFontWeight: 400;
+    --AliasNormalLegalLineHeight: 1.6;
+    --AliasNormalLegalFontSize: 13px;
+    --AliasNormalNormalFontFamily: Inter;
+    --AliasNormalNormalFontWeight: 400;
+    --AliasNormalNormalLineHeight: 1.6;
+    --AliasNormalNormalFontSize: 16px;
+    --AliasNormalLedeFontFamily: Inter;
+    --AliasNormalLedeFontWeight: 500;
+    --AliasNormalLedeLineHeight: 1.3;
+    --AliasNormalLedeFontSize: 20px;
+    --AliasStrongLegalFontFamily: Inter;
+    --AliasStrongLegalFontWeight: 700;
+    --AliasStrongLegalLineHeight: 1.6;
+    --AliasStrongLegalFontSize: 13px;
+    --AliasStrongNormalFontFamily: Inter;
+    --AliasStrongNormalFontWeight: 700;
+    --AliasStrongNormalLineHeight: 1.6;
+    --AliasStrongNormalFontSize: 16px;
+
+    /* fontfamily */
+    --Font-Inter: Inter;
+    --Font-Object-sans: PP Object Sans;
+
+    /* textcolor */
+    --TextDefault: #3a3a3a;
+    --TextMuted: #686868;
 }
