@@ -1,0 +1,36 @@
+---
+import Label from "./Label.astro";
+const { title, str, pris, link } = Astro.props;
+---
+
+<article>
+ 
+    <div class="billede">
+    <img src={link} alt="" height="336" width="223" />
+</div>
+  <div>
+    <h5>{title}</h5>
+    <p>Størrelser: {str}</p>
+    <h4>{pris}:-</h4>
+  </div>
+</article>
+
+<style>
+  article {
+   
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    padding: var(--space-md);
+    border: solid black;
+    border-radius: 16px;
+
+  }
+
+  .billede {
+    display: flex;
+    justify-content: center;
+    
+  }
+
+</style>
