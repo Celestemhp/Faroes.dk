@@ -2,13 +2,31 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 img {
     max-width: 100%;
     height: auto;
-    display: block;
+    vertical-align: middle;
 }
-
+.item-image {
+    overflow: hidden;
+}
+hr {
+    display: block;
+    float: none;
+    clear: both;
+    height: 1px;
+    width: 100%;
+    background-color: #d1d0d0;
+    margin: 15px 0;
+}
+h3 {
+    line-height: 50px;
+    letter-spacing: 1px;
+    padding-left: 14px;
+    font-size: 30px;
+}
  :root {
     /* colors */
     --globalBorderRadiusSm: 16px;
@@ -71,7 +89,7 @@ img {
     --shadow: #393939;
     --shadow-light: rgba(229, 229, 229);
 
-    /* fontfamilys */
+    /* fontfamilies */
     --fontFamiliesFontSans: PP Object Sans;
     --fontFamiliesFontSansAlt: Inter;
 
