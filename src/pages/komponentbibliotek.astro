@@ -1,55 +1,45 @@
 ---
 import Card from "../components/Card.astro";
 import Label from "../components/Label.astro";
-
-
+import "../styles/global.css";
+import "../styles/alias.css";
 ---
 
-
-
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<main>
-			<h1>Komponentbibliotek</h1>
-			<div class="label">
-			<Label variant="nyhed-venster">Nyhed</Label> 
-			<Label variant="nyhed-hojre">Nyhed</Label> 
-			<Label variant="tilbud-venster">Tilbud</Label> 
-			<Label variant="tilbud-hojre">Tilbud</Label>
-			<Label variant="tilbage-venster">Få tilbage</Label> 
-			<Label variant="tilbage-hojre">Få tilbage</Label></div>
-			<Card imgPath="https://picsum.photos/id/14/350/350.webp"
-          title="Produktinformation"
-          str="2-5år"
-		  pris="499"/>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body>
+    <main>
+      <h1>Komponentbibliotek</h1>
+      <div class="label">
+        <Label variant="nyhed-venster">Nyhed</Label>
+        <Label variant="nyhed-hojre">Nyhed</Label>
+        <Label variant="tilbud-venster">Tilbud</Label>
+        <Label variant="tilbud-hojre">Tilbud</Label>
+        <Label variant="tilbage-venster">Få tilbage</Label>
+        <Label variant="tilbage-hojre">Få tilbage</Label>
+      </div>
+      <Card imgPath="https://picsum.photos/id/14/350/350.webp" title="Produktinformation" str="2-5år" pris="499" />
 
-		  <Card imgPath="https://picsum.photos/id/14/350/350.webp"
-          title="Produktinformation"
-          str="2-5år"
-		  pris="499"/>
-				
-			
-			
-		</main>
-	</body>
+      <Card imgPath="https://picsum.photos/id/14/350/350.webp" title="Produktinformation" str="2-5år" pris="499" />
+    </main>
+  </body>
 </html>
 
 <style>
-	main {
-		display: flex;
-		gap: 20px;
-		flex-direction: column;
-	}
+  main {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
 
-	.label {
-		display: flex;
-		gap: 10px
-	}
+  .label {
+    display: flex;
+    gap: 10px;
+  }
 </style>
