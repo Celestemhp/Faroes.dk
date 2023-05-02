@@ -1,0 +1,53 @@
+---
+const { variant } = Astro.props;
+---
+
+<div data-variant={variant} class="label"> 
+  
+  <h5><slot /></h5>
+
+</div>
+
+<style>
+.label {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffff;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    width: 135px;
+    height:35px;
+}
+
+  [data-variant="nyhed-venster"] {
+    background: #00C154;
+    border-top-left-radius: 18px;
+  }
+
+  [data-variant="nyhed-hojre"] {
+    background: #00C154;
+    border-top-right-radius: 18px;
+  }
+ 
+  
+
+  [data-variant="tilbud-venster"] {
+    background: #FF3C2C;
+    border-top-left-radius: 18px;
+  }
+  [data-variant="tilbud-hojre"] {
+    background: #FF3C2C;
+    border-top-right-radius: 18px;
+  }
+  [data-variant="tilbage-venster"] {
+    background: #F1C21B;
+    border-top-left-radius: 18px;
+  }
+  [data-variant="tilbage-hojre"] {
+    background: #F1C21B;
+    border-top-right-radius: 18px;
+  }
+
+</style>
