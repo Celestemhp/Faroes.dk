@@ -4,10 +4,12 @@ const { title, str, pris, link } = Astro.props;
 ---
 
 <article>
- 
-    <div class="billede">
+  <div class="label">
+    <slot />
+  </div>
+  <div class="billede">
     <img src={link} alt="" height="336" width="223" />
-</div>
+  </div>
   <div>
     <h5>{title}</h5>
     <p>Størrelser: {str}</p>
@@ -17,20 +19,19 @@ const { title, str, pris, link } = Astro.props;
 
 <style>
   article {
-   
     width: 270px;
     display: flex;
     flex-direction: column;
-    padding: var(--space-md);
+    padding-top: 40px;
+    padding: 20px;
     border: solid black;
-    border-radius: 16px;
-
+    border-radius: var(--globalBorderRadiusSm);
   }
-
+  .label {
+    display: flex;
+  }
   .billede {
     display: flex;
     justify-content: center;
-    
   }
-
 </style>

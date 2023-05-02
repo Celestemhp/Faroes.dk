@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/**
+ * Do not edit directly
+ * Generated on Mon, 01 May 2023 13:52:00 GMT
+ */
+
+:root {
+  --globalBorderRadiusSm: 16px;
+  --globalBorderRadiusMd: 32px;
+  --globalBorderRadiusSmMd: 16px 32px;
+  --globalBorderRadiusFull: 9999px;
+  --red100: #ffe2de;
+  --red200: #ffbfb7;
+  --red300: #ff968c;
+  --red400: #ff6760;
+  --red500: #eb3e3e;
+  --red600: #c42d2c;
+  --red700: #9d1b19;
+  --red800: #7a0306;
+  --red900: #530000;
+  --green100: #b6faaf;
+  --green200: #35ee2b;
+  --green300: #1acf0d;
+  --green400: #18b10e;
+  --green500: #15940d;
+  --green600: #12790c;
+  --green700: #085d04;
+  --green800: #004400;
+  --green900: #002c00;
+  --blue100: #dfe9fd;
+  --blue200: #b9cff8;
+  --blue300: #92b3f3;
+  --blue400: #6d98ee;
+  --blue500: #4a7aeb;
+  --blue600: #2c5be8;
+  --blue700: #1832e3;
+  --blue800: #1600c5;
+  --blue900: #23007d;
+  --purple100: #ebe5fd;
+  --purple200: #d5c6fa;
+  --purple300: #bea6f5;
+  --purple400: #a986ef;
+  --purple500: #9367e6;
+  --purple600: #7e44dd;
+  --purple700: #6a0fd1;
+  --purple800: #4a00a6;
+  --purple900: #2c0076;
+  --neutral100: #e9e9e9;
+  --neutral200: #cecece;
+  --neutral300: #b3b3b3;
+  --neutral400: #999999;
+  --neutral500: #808080;
+  --neutral600: #686868;
+  --neutral700: #505050;
+  --neutral800: #3a3a3a;
+  --neutral900: #252525;
+  --fontFamiliesFontSans: PP Object Sans;
+  --fontFamiliesFontSansAlt: Inter;
+  --lineHeightsAuto: AUTO;
+  --lineHeightsTighter: 1.1;
+  --lineHeightsTight: 1.3;
+  --lineHeightsLoose: 1.6;
+  --fontWeightsBold: 700;
+  --fontWeightsMd: 500;
+  --fontWeightsNormal: 400;
+  --fontSizeSm: 13px;
+  --fontSizeMd: 16px;
+  --fontSizeLg: 20px;
+  --fontSizeXl: 25px;
+  --fontSize2xl: 31px;
+  --fontSize3xl: 39px;
+  --fontSize4xl: 49px;
+  --letterSpacing0: 0em;
+  --paragraphSpacing0: 0;
+  --textCaseNone: none;
+  --textDecorationNone: none;
+  --paragraphIndent0: 0px;
+  --heading: PP Object Sans;
+  --body: Inter;
+}
