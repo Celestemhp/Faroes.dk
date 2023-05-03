@@ -9,8 +9,11 @@ const { title, str, pris, link } = Astro.props;
     <img src={link} alt="" height="336" width="223" />
   </div>
   <div class="tekst">
-    <h5>{title}</h5>
-    <p>Størrelser: {str}</p>
+    <div class="like">
+      <h5>{title}</h5>
+      <img src="src/billede/like.svg" alt="like" />
+    </div>
+    <p class="storrelse">Størrelser: {str}</p>
   </div>
   <div class="sektion">
     <h4>{pris}:-</h4>
@@ -28,9 +31,13 @@ const { title, str, pris, link } = Astro.props;
     padding: 20px;
     border: var(--Card-Border-farve);
     border-radius: var(--Card-BorderRadius);
-    background-color: var(--Card-bg);
   }
-
+  .like {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
   .tekst {
     display: flex;
     flex-direction: column;
