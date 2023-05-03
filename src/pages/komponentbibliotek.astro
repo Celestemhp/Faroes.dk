@@ -1,9 +1,15 @@
 ---
 import Card from "../components/Card.astro";
+import CardTilbage from "../components/CardTilbage.astro";
+import CardTilbud from "../components/CardTilbud.astro";
 import Label from "../components/Label.astro";
+import Button from "../components/Button.astro";
 import "../styles/global.css";
 import "../styles/alias.css";
-import CardTilbud from "../components/CardTilbud.astro";
+
+
+// test
+// import Card from "../components/CardTest.astro";
 ---
 
 <html lang="en">
@@ -20,7 +26,13 @@ import CardTilbud from "../components/CardTilbud.astro";
   <body>
     <main>
       <h1>Komponentbibliotek</h1>
+      <div>
+
+          <a href="/singleview">Singleview</a>
+
+      </div>
       <h2>Labels</h2>
+
       <section>
         <Label variant="nyhed">Nyhed</Label>
 
@@ -28,12 +40,20 @@ import CardTilbud from "../components/CardTilbud.astro";
 
         <Label variant="tilbage">Få tilbage</Label>
       </section>
+      <h2>Cards</h2>
       <section>
-        <div class="card">
+        <!-- <div class="card">
           <Card link="src/billede/ninja.png" title="Produktrubrik" str="2-5år" pris="499" />
         </div>
         <Card link="src/billede/ninja.png" title="Produktrubrik" str="2-5 år" pris="499" />
-        <CardTilbud link="src/billede/ninja.png" title="Produktrubrik" str="2-5 år" pris="499" forpris="599" />
+        <CardTilbud link="src/billede/ninja.png" title="Produktrubrik" str="2-5 år" pris="499" forpris="599" /> -->
+      
+      <!-- nyt -->
+          <CardTilbud link="src/billede/ninja.png" title="Produktrubrik" str="2-5 år" pris="499" forpris="599" />
+          <CardTilbage link="src/billede/ninja.png" title="Produktrubrik" str="2-5 år" pris="499" />
+          <Card link="src/billede/ninja.png" title="Produktrubrik" str="2-5 år" pris="499" banner="nyhed"/>
+      <!--  -->
+
       </section>
       <section>
         <article class="fonts">

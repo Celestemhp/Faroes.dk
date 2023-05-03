@@ -12,11 +12,22 @@ const { variant = "primary" } = Astro.props;
     padding-block: 5px;
     padding-inline: 10px;
   }
+  button :hover {
+    
+  }
   [data-variant="primary"] {
     background-color: var(--blue-knap);
   }
 
   [data-variant="primary"]:hover {
+    background-color: var(--blue800);
+  }
+
+  [data-variant="secondary"] {
+    background-color: var(--blue-knap);
+    margin-left: 10px;
+  }
+  [data-variant="secondary"]:hover {
     background-color: var(--blue800);
   }
 </style>
