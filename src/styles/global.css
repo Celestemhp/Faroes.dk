@@ -14,11 +14,30 @@ img {
  * Generated on Mon, 01 May 2023 13:52:00 GMT
  */
 
+/** Card*/
+
 :root {
-  --globalBorderRadiusSm: 16px;
+  /** Border-Radius */
+
   --globalBorderRadiusMd: 32px;
   --globalBorderRadiusSmMd: 16px 32px;
   --globalBorderRadiusFull: 9999px;
+
+  /** card */
+  --Card-Border-farve: 1px solid #dfe1df;
+  --Card-BorderRadius: 16px;
+  --Card-Width: 270px;
+  --Card-bg: #ebf4ff;
+
+  /** Farver */
+
+  --white: #fff;
+  --sort: #000;
+  --green-tilbud: #00c154;
+  --få-tilbage-yellow: #f1c21b;
+  --blue-knap: #0f62fe;
+  --red-tilbud-tekst: #e53e3e;
+  --red-tilbud: #b92634;
   --red100: #ffe2de;
   --red200: #ffbfb7;
   --red300: #ff968c;
@@ -64,15 +83,21 @@ img {
   --neutral700: #505050;
   --neutral800: #3a3a3a;
   --neutral900: #252525;
+
   --fontFamiliesFontSans: PP Object Sans;
   --fontFamiliesFontSansAlt: Inter;
+  /** Line-heights */
   --lineHeightsAuto: AUTO;
   --lineHeightsTighter: 1.1;
   --lineHeightsTight: 1.3;
   --lineHeightsLoose: 1.6;
+
+  /** Font-weights */
   --fontWeightsBold: 700;
   --fontWeightsMd: 500;
   --fontWeightsNormal: 400;
+
+  /** Font-Size */
   --fontSizeSm: 13px;
   --fontSizeMd: 16px;
   --fontSizeLg: 20px;
@@ -80,6 +105,7 @@ img {
   --fontSize2xl: 31px;
   --fontSize3xl: 39px;
   --fontSize4xl: 49px;
+
   --letterSpacing0: 0em;
   --paragraphSpacing0: 0;
   --textCaseNone: none;
