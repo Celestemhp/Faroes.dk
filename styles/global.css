@@ -1,9 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow: hidden;
-}
+
 img {
     max-width: 100%;
     height: auto;
@@ -25,7 +20,7 @@ h3 {
     line-height: 50px;
     letter-spacing: 1px;
     padding-left: 14px;
-    font-size: 30px;
+    font-size: 24px;
 }
  :root {
     /* colors */

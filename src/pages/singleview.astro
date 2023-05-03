@@ -1,5 +1,8 @@
 ---
 import Card from "../components/Card.astro";
+import "/styles/global.css"
+import "/styles/components.css";
+
 ---
 
 <html lang="en">
@@ -34,7 +37,7 @@ import Card from "../components/Card.astro";
 		</div>
 		
 		<main>
-			<section>
+			<section class="content">
 				<article>
 					<div class="section1" class="item-image">
 						<img src="public/Jack.jpg" alt="Jack">
@@ -133,6 +136,7 @@ import Card from "../components/Card.astro";
 	</body>
 </html>
 <style>
+
 	body {
 		width: 100vw;
 		height: 100vh;
@@ -171,6 +175,12 @@ import Card from "../components/Card.astro";
 		margin: 0 auto;
 		/* max-width: 1000px; */
 		overflow: hidden;
+		display: flex;
+		flex-direction: column;
+	}
+	main .content {
+		display: flex;
+		flex-direction: row;
 	}
 	section {
 		display: block;
@@ -306,6 +316,9 @@ import Card from "../components/Card.astro";
 	.container5 {
 		float: left;
 	}
+	.container5 ul {
+		padding-left: 0px;
+	}
 	.container5 ul li {
 		list-style-type: none;
 		text-decoration: underline;
@@ -314,16 +327,12 @@ import Card from "../components/Card.astro";
 		width: 240px;
 		display: block;
 		float: left;
-		padding: 0 15px;
 		box-sizing: border-box;
 	}
 	nav .section3 {
 		display: block;
 		float: left;
-		padding: 0 15px;
-		box-sizing: border-box;
 		border-left: 1px solid #d1d0d0;
-		padding: 14px 0 0 29px;
 		text-align: center;
 	}
 	nav .section3 li {
@@ -335,18 +344,12 @@ import Card from "../components/Card.astro";
 		color: #0e0f11;
 	}
 	nav .section3 li span {
-		line-height: 30px;
 		margin: 0;
 		padding: 0;
 		border: 0;
 		color: #b2b2b2;
 }
-h3 {
-    line-height: 50px;
-    letter-spacing: 1px;
-    padding-left: 14px;
-    font-size: 24px;
-}
+
 .cards {
 	position: relative;
 	width: 100%;
