@@ -1,7 +1,7 @@
 ---
 import Button from "./Button.astro";
 import Label from "./Label.astro";
-const { title, str, pris, link } = Astro.props;
+const { title, str, pris, link, forpris } = Astro.props;
 ---
 
 <article>
@@ -13,7 +13,9 @@ const { title, str, pris, link } = Astro.props;
     <p>Størrelser: {str}</p>
   </div>
   <div class="sektion">
-    <h4>{pris}:-</h4>
+    <h4 class="rabat">{pris}:-</h4>
+    <h4 class="forpris">{forpris}:-</h4>
+    <h4></h4>
     <Button variant="primary">Læs mere</Button>
   </div>
 </article>
@@ -29,6 +31,13 @@ const { title, str, pris, link } = Astro.props;
     border: var(--Card-Border-farve);
     border-radius: var(--Card-BorderRadius);
     background-color: var(--Card-bg);
+  }
+  .rabat {
+    color: var(--red-tilbud-tekst);
+  }
+
+  .forpris {
+    text-decoration: line-through;
   }
 
   .tekst {

@@ -1,0 +1,22 @@
+---
+const { variant = "primary" } = Astro.props;
+---
+
+<button data-variant={variant}> <slot /></button>
+
+<style>
+  button {
+    text-transform: uppercase;
+    color: var(--white);
+    border: none;
+    padding-block: 5px;
+    padding-inline: 10px;
+  }
+  [data-variant="primary"] {
+    background-color: var(--blue-knap);
+  }
+
+  [data-variant="primary"] :hover {
+    background-color: blueviolet;
+  }
+</style>

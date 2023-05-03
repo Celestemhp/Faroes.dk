@@ -3,12 +3,16 @@ import Card from "../components/Card.astro";
 import Label from "../components/Label.astro";
 import "../styles/global.css";
 import "../styles/alias.css";
+import CardTilbud from "../components/CardTilbud.astro";
 ---
 
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>Astro</title>
@@ -16,17 +20,21 @@ import "../styles/alias.css";
   <body>
     <main>
       <h1>Komponentbibliotek</h1>
-      <div class="label">
-        <Label variant="nyhed-venster">Nyhed</Label>
-        <Label variant="nyhed-hojre">Nyhed</Label>
-        <Label variant="tilbud-venster">Tilbud</Label>
-        <Label variant="tilbud-hojre">Tilbud</Label>
-        <Label variant="tilbage-venster">Få tilbage</Label>
-        <Label variant="tilbage-hojre">Få tilbage</Label>
-      </div>
-      <Card imgPath="https://picsum.photos/id/14/350/350.webp" title="Produktinformation" str="2-5år" pris="499" />
+      <h2>Labels</h2>
+      <section>
+        <Label variant="nyhed">Nyhed</Label>
 
-      <Card imgPath="https://picsum.photos/id/14/350/350.webp" title="Produktinformation" str="2-5år" pris="499" />
+        <Label variant="tilbud">-28%</Label>
+
+        <Label variant="tilbage">Få tilbage</Label>
+      </section>
+      <section>
+        <div class="card">
+          <Card link="src/billede/ninja.png" title="Produktinformation" str="2-5år" pris="499" />
+        </div>
+        <Card link="src/billede/ninja.png" title="Produktinformation" str="2-5 år" pris="499" />
+        <CardTilbud link="src/billede/ninja.png" title="Produktinformation" str="2-5 år" pris="499" forpris="599" />
+      </section>
     </main>
   </body>
 </html>
@@ -36,10 +44,20 @@ import "../styles/alias.css";
     display: flex;
     gap: 20px;
     flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
   .label {
-    display: flex;
-    gap: 10px;
+    position: absolute;
+    left: 10px;
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .card {
   }
 </style>
