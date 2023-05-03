@@ -30,10 +30,84 @@ import CardTilbud from "../components/CardTilbud.astro";
       </section>
       <section>
         <div class="card">
-          <Card link="src/billede/ninja.png" title="Produktinformation" str="2-5år" pris="499" />
+          <Card link="src/billede/ninja.png" title="Produktrubrik" str="2-5år" pris="499" />
         </div>
-        <Card link="src/billede/ninja.png" title="Produktinformation" str="2-5 år" pris="499" />
-        <CardTilbud link="src/billede/ninja.png" title="Produktinformation" str="2-5 år" pris="499" forpris="599" />
+        <Card link="src/billede/ninja.png" title="Produktrubrik" str="2-5 år" pris="499" />
+        <CardTilbud link="src/billede/ninja.png" title="Produktrubrik" str="2-5 år" pris="499" forpris="599" />
+      </section>
+      <section>
+        <article class="fonts">
+          <div class="info">
+            <h1>Dette er en H1</h1>
+            <p>FontWeight: 700</p>
+            <p>Linehight: 1.1</p>
+            <p>Font-size: 49px</p>
+            <p>Font-family: "Rajdhani", sans-serif</p>
+          </div>
+          <div class="info">
+            <h2>Dette er en H2</h2>
+            <p>FontWeight: 700</p>
+            <p>Linehight: 1.1</p>
+            <p>Font-size: 39px</p>
+            <p>Font-family: "Rajdhani", sans-serif</p>
+          </div>
+          <div class="info">
+            <h3>Dette er en H3</h3>
+            <p>FontWeight: 500</p>
+            <p>Linehight: 1.3</p>
+            <p>Font-size: 31px</p>
+            <p>Font-family: "Rajdhani", sans-serif</p>
+          </div>
+          <div class="info">
+            <h4>Dette er en H4</h4>
+            <p>FontWeight: 700</p>
+            <p>Linehight: 1.1</p>
+            <p>Font-size: 25px</p>
+            <p>Font-family: "Rajdhani", sans-serif</p>
+          </div>
+          <div class="info">
+            <h5>Dette er en H5</h5>
+            <p>FontWeight: 700</p>
+            <p>Linehight: 1.1</p>
+            <p>Font-size: 20px</p>
+            <p>Font-family: "Rajdhani", sans-serif</p>
+          </div>
+          <div class="info">
+            <h6>Dette er en H6</h6>
+            <p>FontWeight: 700</p>
+            <p>Linehight: 1.1</p>
+            <p>Font-size: 13px</p>
+            <p>Font-family: "Rajdhani", sans-serif</p>
+          </div>
+          <div class="info">
+            <p>Dette er en paragraf</p>
+            <p>FontWeight: 400</p>
+            <p>Linehight: 1.6</p>
+            <p>Font-size: 16px</p>
+            <p>Font-family: "Roboto", sans-serif</p>
+          </div>
+          <div class="info">
+            <p class="storrelse">Dette er før størrelser</p>
+            <p>FontWeight: 700</p>
+            <p>Linehight: 1.1</p>
+            <p>Font-size: 39px</p>
+            <p>Font-family: "Roboto", sans-serif</p>
+          </div>
+        </article>
+
+        <article>
+          <div class="farve">
+            <div class="gul"></div>
+            <h5>Få-tilbage-yellow</h5>
+            <p>#f1c21b</p>
+          </div>
+
+          <div class="farve">
+            <div class="sort"></div>
+            <h5>Sort</h5>
+            <p>#000</p>
+          </div>
+        </article>
       </section>
     </main>
   </body>
@@ -48,16 +122,38 @@ import CardTilbud from "../components/CardTilbud.astro";
     margin: 0 auto;
   }
 
-  .label {
-    position: absolute;
-    left: 10px;
-  }
-
   section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  .card {
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+  .fonts {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .farve {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .gul {
+    width: 70px;
+    height: 70px;
+    border-radius: 9999px;
+    background-color: var(--få-tilbage-yellow);
+  }
+
+  .sort {
+    width: 70px;
+    height: 70px;
+    border-radius: 9999px;
+    background-color: var(--sort);
   }
 </style>

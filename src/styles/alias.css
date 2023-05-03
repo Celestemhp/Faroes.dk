@@ -5,6 +5,13 @@ body {
   line-height: var(--aliasTypographyBodyNormalNormalLineHeight);
 }
 
+h1 {
+  font-size: var(--aliasTypographyTitleDisplayFontSize);
+  font-family: var(--font-headings);
+  font-weight: var(--aliasTypographyTitleDisplayFontWeight);
+  line-height: var(--aliasTypographyTitleDisplayLineHeight);
+}
+
 h2 {
   font-size: var(--aliasTypographyTitleH2FontSize);
   line-height: var(--aliasTypographyTitleH2LineHeight);
@@ -31,6 +38,7 @@ h5 {
   line-height: var(--aliasTypographyTitleH5LineHeight);
   font-weight: var(--aliasTypographyTitleH5FontWeight);
   font-family: var(--font-headings);
+  text-transform: uppercase;
 }
 
 button {
@@ -43,6 +51,12 @@ button {
 h6 {
   font-size: var(--aliasFontSizeBodySm);
   font-weight: var(--aliasFontWeightHeading);
+}
+.storrelse {
+  font-size: var(--aliasTypographyBodyNormalLightFontSize);
+  font-family: var(--font-body);
+  font-weight: var(--aliasTypographyBodyNormalLightFontWeight);
+  line-height: var(--aliasTypographyBodyNormalLightLineHeight);
 }
 
 :root {
@@ -102,11 +116,11 @@ h6 {
   --aliasTypographyTitleDisplayFontWeight: 700;
   --aliasTypographyTitleDisplayLineHeight: 1.1;
   --aliasTypographyTitleDisplayFontSize: 49px;
-  /** Font-size */
+  /** Font-size body-light */
 
-  --aliasTypographyBodyNormalLegalFontWeight: 400;
-  --aliasTypographyBodyNormalLegalLineHeight: 1.6;
-  --aliasTypographyBodyNormalLegalFontSize: 13px;
+  --aliasTypographyBodyNormalLightFontWeight: 300;
+  --aliasTypographyBodyNormalLightLineHeight: 1.6;
+  --aliasTypographyBodyNormalLightFontSize: 16px;
   /** Font-size body */
   --aliasTypographyBodyNormalNormalFontWeight: 400;
   --aliasTypographyBodyNormalNormalLineHeight: 1.6;

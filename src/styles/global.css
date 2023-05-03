@@ -84,8 +84,6 @@ img {
   --neutral800: #3a3a3a;
   --neutral900: #252525;
 
-  --fontFamiliesFontSans: PP Object Sans;
-  --fontFamiliesFontSansAlt: Inter;
   /** Line-heights */
   --lineHeightsAuto: AUTO;
   --lineHeightsTighter: 1.1;
