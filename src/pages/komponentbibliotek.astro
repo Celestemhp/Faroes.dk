@@ -179,6 +179,13 @@ import "../styles/alias.css";
           <p>padding-block: 5px</p>
           <p>padding-inline: 10px</p>
         </article>
+        <article class="card-article">
+          <h2>Card</h2>
+          <CardTilbud link="src/billede/ninja.png" title="Produktrubrik" str="2-5 år" pris="499" forpris="599" />
+          <p>Border-radius: 16px</p>
+          <p>Border: 1px solid #dfe1df</p>
+          <p>Width: 270px</p>
+        </article>
       </section>
     </main>
 
@@ -205,6 +212,11 @@ import "../styles/alias.css";
         display: flex;
         flex-direction: column;
         gap: 3px;
+      }
+
+      .card-article {
+        display: flex;
+        flex-direction: column;
       }
       .fonts {
         display: flex;
